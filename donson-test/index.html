@@ -6,7 +6,7 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" id="top">
       <div class="page-header__top container">
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo.png" width="200" height="56">
@@ -21,28 +21,28 @@
       <nav class="page-header__nav main-nav container">
         <ul class="main-nav__list main-menu">
           <li class="main-menu__item main-menu__item--active">
-            <a class="main-menu__link" href="#">Главная</a>
+            <a class="main-menu__link" href="#top">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Зарабатывать с donson</a>
+            <a class="main-menu__link" href="#video">Зарабатывать с donson</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">О компании</a>
+            <a class="main-menu__link" href="#block1">О компании</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Продукция и цены</a>
+            <a class="main-menu__link" href="#block2">Продукция и цены</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Начать сотрудничество</a>
+            <a class="main-menu__link" href="#block3">Начать сотрудничество</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Аналитика</a>
+            <a class="main-menu__link" href="#block4">Аналитика</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Маркетинг</a>
+            <a class="main-menu__link" href="#block5">Маркетинг</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Контакты</a>
+            <a class="main-menu__link" href="#block6">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -74,6 +74,49 @@
           <p class="short-video__text2">чтобы узнать подробнее о нашем предложение для Дистрибьюторов</p>
         </div>
       </section>
+      <section class="page-main__block" id="block1">
+        <p>О компании</p>
+      </section>
+      <section class="page-main__block" id="block2">
+        <p>Продукция и цены</p>
+      </section>
+      <section class="page-main__block" id="block3">
+        <p>Начать сотрудничество</p>
+      </section>
+      <section class="page-main__block" id="block4">
+        <p>Аналитика</p>
+      </section>
+      <section class="page-main__block" id="block5">
+        <p>Маркетинг</p>
+      </section>
+      <section class="page-main__block" id="block6">
+        <p>Контакты</p>
+      </section>
+      <section class="page-main__block">
+        <p>blank test</p>
+      </section>
+      <section class="page-main__block">
+        <p>blank test</p>
+      </section>
+      <section class="page-main__block">
+        <p>blank test</p>
+      </section>
     </main>
+    <section class="modal">
+      <h2 class="modal__title">Заказ обратного звонка</h2>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="form-name">Ваше имя</label>
+        <input class="form__input form__input--name" type="text" name="name" id="form-name" placeholder="Имя" pattern="([A-Za-zА-Яа-я0-9-]+)"required>
+        <label class="visually-hidden" for="form-email">Ваш email</label>
+        <input class="form__input form__input--email" type="email" name="email" id="form-email" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})" placeholder="EMAIL" required>
+        <label class="visually-hidden" for="form-phone">Ваш email</label>
+        <input class="form__input form__input--phone" type="tel" name="phone" id="form-phone" placeholder="+7(___) ___-__-__" pattern="\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" value="+7 (___) ___-__-__" required>
+
+        <button type="submit" class="modal__submit">Отправить</button>
+      </form>
+      <button type="button" class="modal__close">Закрыть</button>
+    </section>
+    <div class="overlay"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>
