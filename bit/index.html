@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Bit</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preload" href="fonts/gothampro-bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/gothampro-light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/gothampro.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/proximanova-light.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+  <body class="page">
+    <header class="page__header header">
+
+        <section class="header__top">
+          <div class="anchors">
+            <div class="anchors-wrapper js-anchors-wrapper">
+              <div class="header__top-wrapper container">
+                <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
+                  <!-- <div class="container"> -->
+                  <p class="main-nav__logo">
+                    <!-- <img class="main-nav__logo-image" src="img/logo.svg" width="80" height="27" alt="logo"> -->
+                    <svg class="main-nav__logo-image" width="50" height="30">
+                      <use xlink:href="img/pictures.svg#logo"></use>
+                    </svg>
+                  </p>
+                  <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                  </button>
+                  <ul class="main-nav__list main-menu js-anchors">
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link js-anchor" data-anchor="portfolio">Портфолио</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link js-anchor" data-anchor="uniqueness">Почему мы</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link js-anchor" data-anchor="tariffs">Наши тарифы</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link js-anchor" data-anchor="how-work">Как мы работаем</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link js-anchor" data-anchor="team">Наша команда</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link js-anchor" data-anchor="contacts">Где нас найти</a>
+                    </li>
+                  </ul>
+                  <button class="main-nav__close" type="button">
+                    <span class="visually-hidden">Закрыть меню</span>
+                  </button>
+                  <!-- </div> -->
+                </nav>
+                <a class="header__logo">
+                  <img class="header__logo-image" src="img/logo.svg" width="80" height="27" alt="logo">
+                </a>
+                <p class="header__logo-text">Маркетинговое агенство полного цикла</p>
+
+                <div class="header__call-wrapper call">
+                  <a class="call__link call__link--mobile" href="#" aria-label="заказать звонок">+7 (964) 581-71-55</a>
+                  <a class="call__link call__link--city" href="#" aria-label="заказать звонок">+7 (495) 957-04-44</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="header__order-call order-call container">
+          <h1 class="order-call__title">Эксклюзивный <span class="order-call__title-span">landing page<br></span> от 21 000 руб</h1>
+          <p class="order-call__text">Увеличим оборот Вашего бизнеса от 2 до 7 раз</p>
+          <a class="order-call__link button">Заказать звонок</a>
+          <ul class="order-call__list">
+            <li class="order-call__item order-call__item--cons">Консультация профессионального маркетолога</li>
+            <li class="order-call__item order-call__item--market">Разработка маркетинговой стратегии</li>
+            <li class="order-call__item order-call__item--key">Реализация проектов под ключ</li>
+          </ul>
+        </section>
+
+    </header>
+    <main class="page__main page-main">
+      <section class="page-main__portfolio portfolio js-anchor-object js-portfolio-filter" data-anchor-object="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title title">
+            Наше <span class="title__span">портфолио</span>
+          </h2>
+          <div class="portfolio__select-wrapper">
+            <p class="portfolio__text">Отфильтруйте к просмотру проекты, которые вам действительно интересны</p>
+            <div class="portfolio__select select">
+              <div class="select__current-wrapper">
+                <input class="select__current" type="text" value="Все" readonly>
+              </div>
+              <ul class="select__list">
+                <li class="select__item js-portfolio-filter-item" data-portfolio="all">Все</li>
+                <li class="select__item js-portfolio-filter-item" data-portfolio="1">One</li>
+                <li class="select__item js-portfolio-filter-item" data-portfolio="2">Two</li>
+                <li class="select__item js-portfolio-filter-item" data-portfolio="3">Three</li>
+                <li class="select__item js-portfolio-filter-item" data-portfolio="4">Four</li>
+              </ul>
+            </div>
+          </div>
+          <ul class="poftfolio__list">
+            <li class="portfolio__item js-portfolio-filter-object" data-portfolio-object="1">
+              <img class="portfolio__item-image" src="img/portfolio-item01.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item js-portfolio-filter-object" data-portfolio-object="2">
+              <img class="portfolio__item-image" src="img/portfolio-item02.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item js-portfolio-filter-object" data-portfolio-object="3">
+              <img class="portfolio__item-image" src="img/portfolio-item03.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="4">
+              <img class="portfolio__item-image" src="img/portfolio-item04.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="1">
+              <img class="portfolio__item-image" src="img/portfolio-item05.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="2">
+              <img class="portfolio__item-image" src="img/portfolio-item06.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="3">
+              <img class="portfolio__item-image" src="img/portfolio-item06.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="4">
+              <img class="portfolio__item-image" src="img/portfolio-item06.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="1">
+              <img class="portfolio__item-image" src="img/portfolio-item05.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="2">
+              <img class="portfolio__item-image" src="img/portfolio-item06.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="3">
+              <img class="portfolio__item-image" src="img/portfolio-item06.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+            <li class="portfolio__item portfolio__item--hidden js-portfolio-filter-object" data-portfolio-object="4">
+              <img class="portfolio__item-image" src="img/portfolio-item06.jpg" width="290" height="250" alt="portfolio01">
+              <a class="portfolio__item-info item-info" href="#">
+                <h3 class="item-info__title">Уютные мангальные зоны</h3>
+                <p class="item-info__text1">Услуги для бизнеса 2018</p>
+                <p class="item-info__link" href="#">Подробнее---></p>
+                <p class="item-info__text2">Конверсия увеличена в 1.5 раз</p>
+              </a>
+            </li>
+          </ul>
+          <button class="portfolio__more-link js-portfolio-view-more" type="button">
+            ещё проекты
+            <svg class="portfolio__more-link-arrow" width = "15" height= "15">
+              <use xlink:href = "img/pictures.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="page-main__uniqueness uniqueness js-anchor-object" data-anchor-object="uniqueness">
+        <div class="container">
+          <h2 class="uniqueness__title title">Почему
+            <span class="title__span"><br>выбирают<br></span>
+            нас
+          </h2>
+          <ul class="uniqueness__list">
+            <li class="uniqueness__item uniqueness__item--conv">
+              <svg class="uniqueness__svg uniqueness__svg--conv" width = "20" height= "20">
+                <use xlink:href = "img/pictures.svg#conv"></use>
+              </svg>
+              Максимальная конверсия благодаря уникальным технологиям при создании лендинга
+            </li>
+            <li class="uniqueness__item uniqueness__item--design">
+              <svg class="uniqueness__svg uniqueness__svg--design" width = "20" height= "20">
+                <use xlink:href = "img/pictures.svg#design"></use>
+              </svg>
+              Уникальный дизайн
+            </li>
+            <li class="uniqueness__item uniqueness__item--tech">
+              <svg class="uniqueness__svg uniqueness__svg--tech" width = "20" height= "20">
+                <use xlink:href = "img/pictures.svg#tech"></use>
+              </svg>
+              Новые технологии разработки лендингов
+            </li>
+          </ul>
+          <form class="uniqueness__form form">
+            <p class="form__title">Отправьте заявку и мы перезвоним</p>
+            <div class="form__input-wrapper">
+              <label class="visually-hidden" for="form-name">Ваше имя</label>
+              <input class="form__input-text form__input-text--name" type="text" name="name" id="form-name" placeholder="Ваше имя...">
+              <label class="visually-hidden" for="form-phone">Ваше телефон...</label>
+              <input class="form__input-text form__input-text--phone" type="text" name="phone" id="form-phone" placeholder="Ваш телефон...">
+            </div>
+            <label class="visually-hidden" for="form-message">Ваше cообщение</label>
+            <textarea class="form__textarea" name="message" id="form-message" placeholder="Ваше сообщение..."></textarea>
+            <div class="form__button-wrapper">
+              <input class="form__input-checkbox visually-hidden" type="checkbox" id="form-agreement">
+              <label class="form__label form__label--agreement" for="form-agreement">Отправив заявку вы соглашаетесь на обработку персональных данных.<br> Ваши данные находятся в безопасности и не будут переданы третьим лицам</label>
+              <button class="form__submit button" type="submit">Отправить</button>
+              <!-- <div class="form__popup">
+                <button class="form__popup-close" type="button">
+                  <span class="visually-hidden">Закрыть сообщение</span>
+                </button>
+                <p class="form__popup-title">Спасибо за Вашу заявку!</p>
+                <p class="form__popup-text">В ближайшее время с Вами свяжется наш специалист</p>
+              </div> -->
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="tariffs js-anchor-object js-accordion" data-anchor-object="tariffs" id="tariffs">
+        <div class="container">
+          <h2 class="tariffs__title title">
+            Наши <br>
+            <span class="title__span">тарифные</span>
+            планы
+          </h2>
+          <p class="tariffs__text">Это стоимость серьезного количества клиентов</p>
+          <div class="tariffs__buttons">
+            <button class="tariffs__button js-accordion-btn" type="button">Старт</button>
+            <button class="tariffs__button js-accordion-btn tariffs__button--active" type="button">Бизнес</button>
+            <button class="tariffs__button js-accordion-btn tariffs__button--wide" type="button">Система продаж</button>
+          </div>
+          <ul class="tariffs__list js-tariffs">
+            <li class="tariffs__item tariffs-title-item">
+              <div class="tariffs-title-item__wrapper">
+                <div class="tariffs-title-item__title"></div>
+                <ul class="tariffs-title-item__list js-tariffs-el">
+                  <li class="tariffs-title-item__item">Создание Landing page под ключ</li>
+                  <li class="tariffs-title-item__item">Подключение Web-аналитики (Яндекс Метрики и целей)</li>
+                  <li class="tariffs-title-item__item">КАЛЬКУЛЯТОРЫ, ОНЛАЙН-ПОМОЩНИКИ И ДРУГИЕ ДОПОЛНИТЕЛЬНЫЕ ФУНКЦИИ</li>
+                  <li class="tariffs-title-item__item">А/В тестирование</li>
+                  <li class="tariffs-title-item__item">НАСТРОЙКА ЯНДЕКС.ДИРЕКТА, РСЯ, РЕТАРГЕТИНГ</li>
+                  <li class="tariffs-title-item__item">НАСТРОЙКА GOOGLE ADWORDS, КМС, РЕМАРКЕТИНГ</li>
+                  <li class="tariffs-title-item__item">ИНТЕГРАЦИЯ С CRM-СИСТЕМОЙ</li>
+                  <li class="tariffs-title-item__item">ПОДКЛЮЧЕНИЕ МОДУЛЯ ГЕОТАРГЕТИНГА И МУЛЬТИЛЕНДИНГА</li>
+                  <li class="tariffs-title-item__item">НАСТРОЙКА СКВОЗНОЙ АНАЛИТИКИ И AB-ТЕСТИРОВАНИЕ</li>
+                </ul>
+                <button class="tariffs-title-item__button js-tariffs-btn js-show" type="button">+ Показать опции</button>
+              </div>
+            </li>
+            <li class="tariffs__item tariffs-item js-accordion-el">
+              <div class="tariffs-item__wrapper">
+                <h3 class="tariffs-item__title">Старт</h3>
+                <ul class="tariffs-item__list js-tariffs-el">
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Создание Landing page под ключ</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Подключение Web-аналитики (Яндекс Метрики и целей)</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Калькуляторы, онлайн-помощники и другие дополнительные функции</span></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                </ul>
+                <p class="tariffs-item__old-price">69 000</p>
+                <p class="tariffs-item__new-price">54 000<span class="tariffs-item__currency"></span></p>
+              </div>
+              <a class="tariffs-item__button button" href="#">Оставить заявку</a>
+            </li>
+            <li class="tariffs__item tariffs-item tariffs-item--active js-accordion-el">
+              <div class="tariffs-item__wrapper tariffs-item__wrapper--active">
+                <h3 class="tariffs-item__title tariffs-item__title--active">Бизнес</h3>
+                <ul class="tariffs-item__list js-tariffs-el">
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Создание Landing page под ключ</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Подключение Web-аналитики (Яндекс Метрики и целей)</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Калькуляторы, онлайн-помощники и другие дополнительные функции</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">А/В тестирование</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Настройка Яндекс.Директа, РСЯ, Ретаргетинг</span></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Интеграция с CRM-Системой</span></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                  <li class="tariffs-item__item tariffs-item__item--not-available"></li>
+                </ul>
+                <p class="tariffs-item__old-price">79 000</p>
+                <p class="tariffs-item__new-price">64 000<span class="tariffs-item__currency"></span></p>
+              </div>
+              <a class="tariffs-item__button button" href="#">Оставить заявку</a>
+            </li>
+            <li class="tariffs__item tariffs-item js-accordion-el">
+              <div class="tariffs-item__wrapper tariffs-item__wrapper--last">
+                <h3 class="tariffs-item__title">Система продаж</h3>
+                <ul class="tariffs-item__list js-tariffs-el">
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Создание Landing page под ключ</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Подключение Web-аналитики (Яндекс Метрики и целей)</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Калькуляторы, онлайн-помощники и другие дополнительные функции</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">А/В тестирование</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Настройка Яндекс.Директа, РСЯ, Ретаргетинг</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Настройка GOOGLE ADWORDS, КМС, Ремаркетинг</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Интеграция с CRM-Системой</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Подключение модуля геотаргетинга и мультилендинга</span></li>
+                  <li class="tariffs-item__item"><span class="tariffs-item__span">Настройка сквозной аналитики и AB-тестирование</span></li>
+                </ul>
+                <p class="tariffs-item__old-price">99 000</p>
+                <p class="tariffs-item__new-price">89 000<span class="tariffs-item__currency"></span></p>
+              </div>
+              <a class="tariffs-item__button button" href="#">Оставить заявку</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-work js-anchor-object" data-anchor-object="how-work">
+        <div class="container">
+          <h2 class="how-work__title title">
+            До<span class="title__span"> успеха </span><br class="title__br">Вам осталось <span class="title__span">несколько шагов</span>
+          </h2>
+          <div class="how-work__container">
+            <ul class="how-work__list">
+              <li class="how-work__item how-work__item--application">Отправить заявку нашему специалисту</li>
+              <li class="how-work__item how-work__item--review">Мы внимательно анализируем специфику<br class="how-work__br how-work__br--mobile"> Вашего бизнеса и Ваших конкурентов</li>
+              <li class="how-work__item how-work__item--concept">Создаем уникальную концепцию позиционирования Вашей компании</li>
+              <li class="how-work__item how-work__item--trigger">
+                <p class="how-work__text-wrapper">Представим набор триггеров.<br class="how-work__br how-work__br--mobile"> То, что заставит Ваш сайт продавать!</p>
+              </li>
+              <li class="how-work__item how-work__item--prototype">Согласовываем прототип сайта</li>
+              <li class="how-work__item how-work__item--design">Создаем <br class="how-work__br"> дизайн - макет лендинга </li>
+              <li class="how-work__item how-work__item--programming">Программирование и верстка</li>
+            </ul>
+            <a class="how-work__button button" href="#">Сделать первый шаг</a>
+          </div>
+        </div>
+      </section>
+      <section class="team js-anchor-object" data-anchor-object="team">
+        <div class="container">
+          <h2 class="team__title title">
+            Наша
+            <span class="title__span">команда</span>
+          </h2>
+          <div class="team__slider-container">
+            <div class="team__wrapper team__wrapper--before">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/team-2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/team-2-tablet.jpg">
+                <img class="team__foto team__foto--before" src="img/team-2-mobile.jpg" alt="Роуэн Аткинсон">
+              </picture>
+              <div class="team__description">
+                <p class="team__member-name">Роуэн Аткинсон</p>
+                <p class="team__member-position">Проект менеджер1</p>
+                <p class="team__member-qualification">Отвечает за успех Вашего проекта.</p>
+              </div>
+            </div>
+            <div class="team__wrapper team__wrapper--active">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/team-2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/team-2-tablet.jpg">
+                <img class="team__foto team__foto--active" src="img/team-2-mobile.jpg" alt="Роуэн Аткинсон">
+              </picture>
+              <div class="team__description">
+                <p class="team__member-name">Роуэн Аткинсон</p>
+                <p class="team__member-position">Проект менеджер2</p>
+                <p class="team__member-qualification">Отвечает за успех Вашего проекта.</p>
+              </div>
+            </div>
+            <div class="team__wrapper team__wrapper--after">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/team-3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/team-3-tablet.jpg">
+                <img class="team__foto team__foto--after" src="img/team-3-mobile.jpg" alt="Роуэн Аткинсон">
+              </picture>
+              <div class="team__description">
+                <p class="team__member-name">Роуэн Аткинсон</p>
+                <p class="team__member-position">Проект менеджер3</p>
+                <p class="team__member-qualification">Отвечает за успех Вашего проекта.</p>
+              </div>
+            </div>
+            <div class="team__wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/team-3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/team-3-tablet.jpg">
+                <img class="team__foto team__foto--after" src="img/team-3-mobile.jpg" alt="Роуэн Аткинсон">
+              </picture>
+              <div class="team__description">
+                <p class="team__member-name">Роуэн Аткинсон</p>
+                <p class="team__member-position">Проект менеджер4</p>
+                <p class="team__member-qualification">Отвечает за успех Вашего проекта.</p>
+              </div>
+            </div>
+            <div class="team__wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/team-3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="img/team-3-tablet.jpg">
+                <img class="team__foto team__foto--after" src="img/team-3-mobile.jpg" alt="Роуэн Аткинсон">
+              </picture>
+              <div class="team__description">
+                <p class="team__member-name">Роуэн Аткинсон</p>
+                <p class="team__member-position">Проект менеджер5</p>
+                <p class="team__member-qualification">Отвечает за успех Вашего проекта.</p>
+              </div>
+            </div>
+            <button class="team__button team__button--back" type="button" aria-label="Назад">
+              <svg class="team__arrow team__arrow--back" width = "21" height= "21">
+                <use xlink:href = "img/pictures.svg#arrow-team"></use>
+              </svg>
+            </button>
+            <button class="team__button team__button--forward" type="button" aria-label="Вперед">
+              <svg class="team__arrow team__arrow--forward" width = "21" height= "21">
+                <use xlink:href = "img/pictures.svg#arrow-team"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="request">
+        <div class="container">
+          <h2 class="request__title title">
+            Оставить
+            <span class="title__span">запрос</span>
+            специалисту
+          </h2>
+          <form class="request__form form">
+              <p class="form__title">Отправьте заявку и мы перезвоним</p>
+              <div class="form__input-wrapper">
+                <label class="visually-hidden" for="form2-name">Ваше имя</label>
+                <input class="form__input-text form__input-text--name" type="text" name="name" id="form2-name" placeholder="Ваше имя...">
+                <label class="visually-hidden" for="form2-phone">Ваше телефон...</label>
+                <input class="form__input-text form__input-text--phone" type="text" name="phone" id="form2-phone" placeholder="Ваш телефон...">
+              </div>
+              <label class="visually-hidden" for="form2-message">Ваше cообщение</label>
+              <textarea class="form__textarea" name="message" id="form2-message" placeholder="Ваше сообщение..."></textarea>
+              <div class="form__button-wrapper">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form2-agreement">
+                <label class="form__label form__label--agreement" for="form2-agreement">Отправив заявку вы соглашаетесь на обработку персональных данных.<br> Ваши данные находятся в безопасности и не будут переданы третьим лицам</label>
+                <button class="form__submit button" type="submit">Отправить</button>
+                <!-- <div class="form__popup">
+                  <button class="form__popup-close" type="button">
+                    <span class="visually-hidden">Закрыть сообщение</span>
+                  </button>
+                  <p class="form__popup-title">Спасибо за Вашу заявку!</p>
+                  <p class="form__popup-text">В ближайшее время с Вами свяжется наш специалист</p>
+                </div> -->
+              </div>
+          </form>
+        </div>
+      </section>
+      <section class="contacts js-anchor-object" data-anchor-object="contacts">
+        <div class="container">
+          <h2 class="contacts__title title">
+            Где нас
+            <span class="title__span">найти</span>
+          </h2>
+          <div class="contacts__map-contacts-wrapper">
+            <picture class="contacts__map-picture">
+              <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+              <img class="contacts__map-image" src="img/map-mobile.jpg" alt="г. Москва, ул.Радио, д. 24, корп.1">
+            </picture>
+            <div class="contacts__wrapper">
+              <p class="contacts__text contacts__text--adress">
+                <span class="contacts__span">Адрес:</span>
+                г.Москва. Радио ул., д.24 корп.1
+              </p>
+              <p class="contacts__text contacts__text--phone">
+                <span class="contacts__span">Телефон:</span>
+                +7 (964) 581 71 55 <br>
+                +7 (495) 957-04-44
+              </p>
+              <p class="contacts__text contacts__text--work-time">
+                <span class="contacts__span">Часы работы:</span>
+                C 9:00 до 18:00 Сб,Вс - выходной
+              </p>
+              <ul class="contacts__social social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <svg class="social__svg social__svg--vkontakte" width = "23" height= "23">
+                      <use xlink:href = "img/pictures.svg#vkontakte"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">Фейсбук</span>
+                    <svg class="social__svg social__svg--facebook" width = "20" height= "20">
+                      <use xlink:href = "img/pictures.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <span class="visually-hidden">Инстаграмм</span>
+                    <svg class="social__svg social__svg--instagramm" width = "20" height= "20">
+                      <use xlink:href = "img/pictures.svg#instagramm"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="contacts__link js-anchor" data-anchor="tariffs" href="#">
+            <svg class="сontacts__svg" width = "29" height= "29">
+              <use xlink:href = "img/pictures.svg#point"></use>
+            </svg>
+            Вернуться к тарифам
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrapper">
+          <p class="footer__copyright">&#169; 2018. Маркетинговое агенство полного цикла</p>
+          <div class="footer__social-privacy-wrapper">
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="social__svg social__svg--white social__svg--vkontakte" width = "23" height= "23">
+                    <use xlink:href = "img/pictures.svg#vkontakte"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg class="social__svg social__svg--white social__svg--facebook" width = "20" height= "20">
+                    <use xlink:href = "img/pictures.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Инстаграмм</span>
+                  <svg class="social__svg social__svg--white social__svg--instagramm" width = "20" height= "20">
+                    <use xlink:href = "img/pictures.svg#instagramm"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+        <!-- <a class="footer__mobile-phone" href="#">
+          <span class="visually-hidden">Позвоните нам</span>
+        </a>
+        <p class="footer__phone">+7 (964) 581 71 55</p> -->
+        <div class="footer__call-wrapper call">
+            <a class="call__link call__link--mobile" href="#" aria-label="заказать звонок">+7 (964) 581-71-55</a>
+            <a class="call__link call__link--city" href="#" aria-label="заказать звонок">+7 (495) 957-04-44</a>
+          </div>
+      </div>
+    </footer>
+    <div class="overlay"></div>
+    <div class="popup popup--call">
+      <p class="popup__logo">
+        <svg class="popup__logo-image" width = "50" height= "30">
+          <use xlink:href = "img/pictures.svg#logo"></use>
+        </svg>
+        <span class="popup__logo-text">Маркетинговое агенство полного цикла</span>
+        <span class="popup__tarrif-title">Тариф: <span class="popup__tarrif-title popup__tarrif-title--selected">Система продаж</span></span>
+      </p>
+      <button class="popup__close" type="button">
+        <span class="visually-hidden">Закрыть сообщение</span>
+      </button>
+      <form class="form form--call" action="https://echo.htmlacademy.ru">
+        <label class="visually-hidden" for="order-call-name">Ваше имя</label>
+        <input class="form__input-text form__input-text--name" type="text" name="name" id="order-call-name" placeholder="Ваше имя...">
+        <label class="visually-hidden" for="order-call-phone">Ваш телефон...</label>
+        <input class="form__input-text form__input-text--phone" type="text" name="phone" id="order-call-phone" placeholder="Ваш телефон...">
+        <!-- <label class="visually-hidden" for="order-call-email">Ваш e-mail...</label>
+        <input class="form__input-text form__input-text--email" type="text" name="email" id="order-call-email" placeholder="Ваш e-mail..."> -->
+        <p class="form__select-title">Когда с Вами будет удобно связаться?</p>
+        <div class="form__select select select--form">
+          <div class="select__current-wrapper">
+            <input class="select__current" type="text" name="time" value="Сейчас" readonly>
+          </div>
+          <ul class="select__list">
+            <li class="select__item">Сейчас</li>
+            <li class="select__item">Через 15 минут</li>
+            <li class="select__item">Через 30 минут</li>
+            <li class="select__item">Через 1 час</li>
+            <li class="select__item">Более часа</li>
+          </ul>
+        </div>
+
+        <p class="form__personal-info">*Отправляя форму, вы даете свое согласие на <span class="form__personal-info form__personal-info--span">обработку персональных даных</span></p>
+        <button class="form__submit button" type="submit">заказать звонок</button>
+      </form>
+    </div>
+    <div class="popup popup--agreement">
+      <button class="popup__close" type="button">
+        <span class="visually-hidden">Закрыть сообщение</span>
+      </button>
+      <p class="popup__agreement-title">
+        соглашение об обработке персональных данных
+      </p>
+      <p class="popup__agreement-text">
+        Обработка персональных данных посетителя сайта http://*********/ (далее — Пользователя) осуществляется в соответствии с законодательством Российской Федерации. ООО «BIT» (далее — Администрация Ресурса) обрабатывает персональные данные Пользователя в целях предоставления Пользователю услуг, в том числе, в целях получения Пользователем персонализированной (таргетированной) рекламы; проверки, исследования и анализа таких данных, позволяющих поддерживать и улучшать сервисы сайта http://**********/(далее — Ресурса), а также разрабатывать новые сервисы и разделы Ресурса.
+      </p>
+    </div>
+    <div class="popup popup--info">
+      <p class="popup__logo">
+        <svg class="popup__logo-image" width = "50" height= "30">
+          <use xlink:href = "img/pictures.svg#logo"></use>
+        </svg>
+        <span class="popup__logo-text">Маркетинговое агенство полного цикла</span>
+        <span class="popup__tarrif-title">Ваш тариф: <span class="popup__tarrif-title popup__tarrif-title--quote">“</span><span class="popup__tarrif-title popup__tarrif-title--selected">Система продаж</span><span class="popup__tarrif-title popup__tarrif-title--quote">”</span></span>
+      </p>
+      <button class="popup__close" type="button">
+        <span class="visually-hidden">Закрыть сообщение</span>
+      </button>
+      <p class="popup__title">Спасибо за Вашу заявку!</p>
+      <p class="popup__text">В ближайшее время с Вами свяжется наш специалист</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
