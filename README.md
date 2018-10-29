@@ -3,3 +3,4 @@ Demo для личных проектов
 - [Cat Energy](http://quasko.com/cat-energy)
 - [Keksobooking](http://quasko.com/keksobooking)
 - [BIT](http://quasko.com/bit)
+- [vue-test](http://quasko.com/vue-test)
